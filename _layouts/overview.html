@@ -1,0 +1,121 @@
+---
+layout: default
+---
+
+<!-- Page Heading -->
+<div class="row">
+    <div class="col-lg-12">
+        <div class="jumbotron">
+            {{ content | markdownify }}
+            <!--<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>-->
+        </div>
+    </div>
+</div>
+<!-- /.row -->
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="page-header">
+            <h2 id="meta">Meta articles</h2>    <!-- 2DO: translate -->
+        </div>
+    </div>
+</div>
+
+<!-- Meta articles -->
+{% assign meta_articles_lang = site.articles_meta | where:"lang", page.lang %}
+{% for article in meta_articles_lang %}
+<div class="row">
+    <div class="col-md-7">
+        <a href="{{ article.url | prepend: site.github.url }}">
+            {% if article.feature_image %}
+            <img class="img-responsive" src="{{ site.github.url }}{{ article.feature_image}}" alt="{{article.feature_image_alt}}">
+            {% else %}
+            <img class="img-responsive" src="{{ site.github.url }}images/feature_image_blank_700_300.png" role="presentation">
+            {% endif %}
+        </a>
+    </div>
+    <div class="col-md-5">
+        <h3>{{ article.title }}</h3>
+        {% if article.subtitle %}
+        <h4>{{article.subtitle}}</h4>
+          {% endif %}
+        <p>{{article.teaser}}</p>
+        <a class="btn btn-primary" href="{{ article.url | prepend: site.github.url }}">View <span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+</div>
+<hr> {% endfor %}
+<!-- /.row -->
+<!-- /meta-articles -->
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="page-header">
+            <h2 id="tool">Tool articles</h2>    <!-- 2DO: translate -->
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Tool articles -->
+{% assign tool_articles_lang = site.articles_tool | where:"lang", page.lang %}
+{% for article in tool_articles_lang %}
+<div class="row">
+    <div class="col-md-7">
+      <a href="{{ article.url | prepend: site.github.url }}">
+          {% if article.feature_image %}
+          <img class="img-responsive" src="{{ site.github.url }}{{ article.feature_image}}" alt="{{article.feature_image_alt}}">
+          {% else %}
+          <img class="img-responsive" src="{{ site.github.url }}images/feature_image_blank_700_300.png" role="presentation">
+          {% endif %}
+      </a>
+    </div>
+    <div class="col-md-5">
+        <h3>{{ article.title }}</h3>
+        {% if article.subtitle %}
+        <h4>{{article.subtitle}}</h4>
+          {% endif %}
+        <p>{{article.teaser}}</p>
+        <a class="btn btn-primary" href="{{ article.url | prepend: site.github.url }}">View <span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+</div>
+<hr> {% endfor %}
+<!-- /.row -->
+<!-- /tool-articles -->
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="page-header">
+            <h2 id="practise">Practise articles</h2>    <!-- 2DO: translate -->
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Tool articles -->
+{% assign practise_articles_lang = site.articles_practise | where:"lang", page.lang %}
+{% for article in practise_articles_lang %}
+<div class="row">
+    <div class="col-md-7">
+      <a href="{{ article.url | prepend: site.github.url }}">
+          {% if article.feature_image %}
+          <img class="img-responsive" src="{{ site.github.url }}{{ article.feature_image}}" alt="{{article.feature_image_alt}}">
+          {% else %}
+          <img class="img-responsive" src="{{ site.github.url }}images/feature_image_blank_700_300.png" role="presentation">
+          {% endif %}
+      </a>
+    </div>
+    <div class="col-md-5">
+      <h3>{{ article.title }}</h3>
+      {% if article.subtitle %}
+      <h4>{{article.subtitle}}</h4>
+        {% endif %}
+      <p>{{article.teaser}}</p>
+      <a class="btn btn-primary" href="{{ article.url | prepend: site.github.url }}">View <span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div>
+</div>
+<hr> {% endfor %}
+<!-- /.row -->
+<!-- /tool-articles -->

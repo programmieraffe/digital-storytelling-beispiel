@@ -1,0 +1,61 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Build settings
+markdown: kramdown
+
+# Language specific settings
+title:
+  de: Open Online Explorer
+  en: Open Online Explorer
+index:
+  en: index.html
+  de: index-de.html
+footer-notice:
+  de: 'Produziert mit dem <a href="https://github.com/MediaLiteracyLab/open-online-explorer">Open Online Explorer vom Media Literacy Lab</a>'
+  en: 'Made with Media Literacy Lab <a href="https://github.com/MediaLiteracyLab/open-online-explorer">Open Online Explorer</a>'
+#Translation Storytellings
+t:
+  en:
+    meta-articles: "Meta articles"
+  de:
+    meta-articles: "Meta-Artikel"
+
+# thanks to jhackt!
+collections:
+  articles_meta:
+    output: true
+    permalink: /meta/:path/
+  articles_tool:
+    output: true
+    permalink: /tool/:path/
+  articles_practise:
+    output: true
+    permalink: /practise/:path/
+
+defaults:
+  - scope:
+      type: articles_meta
+    values:
+      layout: article
+  - scope:
+      type: articles_tool
+    values:
+      layout: article
+  - scope:
+      type: articles_practise
+    values:
+      layout: article
+
+# General ite settings
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog - do not change this!
+#url: "http://yourdomain.com" # the base hostname & protocol for your site

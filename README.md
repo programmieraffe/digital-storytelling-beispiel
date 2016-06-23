@@ -1,8 +1,6 @@
 # Open Online Explorer
 
-The Open Online Explorer enables you to explore a topic together and publish the results as a webpage on github pages.*
-
-(* with nearly zero maintenance)
+The Open Online Explorer enables you to explore a topic together and publish the results as a static webpage on github pages. The webpage can be improved or remixed by other users on github.com.
 
 ** Live preview: ** https://medialiteracylab.github.io/open-online-explorer
 
@@ -19,6 +17,7 @@ Open Online Explorer is currently in alpha version state.
 - easily add articles via github.com web-interface or git desktop clients
 - add articles in multiple languages
 - easily add featured images for articles
+- other github-users can propose changes or new articles
 - static website on github pages, no spam or security issues like in wordpress or similiar content management systems
 - no webspace/webserver needed
 

@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<!-- Page Heading -->
+<div class="row article-content">
+    <div class="col-lg-12">
+
+      {% if page.feature_image %}
+      <img class="img-responsive" src="{{ site.github.url }}{{ page.feature_image}}" alt="{{page.feature_image_alt}}">
+      {% endif %}
+
+        <h1 class="page-header">{{ page.title }}
+            <small>{{ page.subtitle }}</small>
+        </h1>
+        {{ page.content }}
+
+    </div>
+</div>
+<!-- /.row -->
+
+<!--
+<div class="row">
+<h2>Sidebar</h2>
+
+<ul class="nav nav-pills nav-stacked nav-pills-stacked-example">
+    <li role="presentation" class="active"><a href="#">Home</a>
+      <ul><li>test</li>
+      </ul>
+    </li>
+    <li role="presentation"><a href="#">Profile</a></li>
+    <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+</div>
+-->

@@ -1,0 +1,8 @@
+<!-- Get the welcome file in correct language and inlcude it -->
+{% assign welcome_pages = site.pages | where:'ref','welcome' %}
+{% assign welcome_pages = welcome_pages | where:'lang', page.lang %}
+{% for welcome_page in welcome_pages %}
+<h2>Welcome page title: {{ welcome_page.title }}</h2>
+{{ welcome_page.content }}
+{% endfor %}
+<!-- eo welcome page -->

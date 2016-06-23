@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+{% include head.html %}
+
+<body>
+        {% include header.html %}
+
+        <!-- Page Content -->
+        <div class="container">
+
+          <div class="row page-translation">
+              <div class="col-md-12">
+
+            <div class="page-translation" style="text-align:right;">
+                {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+                {% for post in posts %}
+                <a href="{{ post.url }}" class="{{ post.lang }}">{{post.lang}}</a>
+                {% endfor %}
+                {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+                {% for page in pages %}
+                <a href="{{ page.url }}" class="{{ page.lang }}">
+                  {{page.lang}}
+                </a>
+                {% endfor %}
+                {% assign articles_meta=site.articles_meta | where:"ref", page.ref | sort: 'lang' %}
+                {% for page in articles_meta %}
+                <a href="{{ page.url }}" class="{{ page.lang }}">
+                  {{page.lang}}
+                </a>
+                {% endfor %}
+                {% assign articles_tool=site.articles_tool | where:"ref", page.ref | sort: 'lang' %}
+                {% for page in articles_tool %}
+                <a href="{{ page.url }}" class="{{ page.lang }}">
+                  {{page.lang}}
+                </a>
+                {% endfor %}
+                {% assign articles_practise=site.articles_practise | where:"ref", page.ref | sort: 'lang' %}
+                {% for page in articles_practise %}
+                <a href="{{ page.url }}" class="{{ page.lang }}">
+                  {{page.lang}}
+                </a>
+                {% endfor %}
+            </div>
+          </div>
+          </div>
+
+        {{ content }}
+
+        {% include footer.html %}
