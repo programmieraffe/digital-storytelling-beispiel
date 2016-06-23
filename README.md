@@ -5,7 +5,7 @@ The Open Online Explorer enables you to explore a topic together and publish the
 (* with nearly zero maintenance)
 
 Live preview:
-(If you have forked this repository, replace this link the following way: https://<YOUR-USERNAME>.github.io/<YOUR-REPOSITORY-TITLE>)
+(If you have forked this repository, replace this link the following way: https://YOUR-USERNAME.github.io/YOUR-REPOSITORY-TITLE>)
 
 Open Online Explorer is currently in alpha version state.
 
