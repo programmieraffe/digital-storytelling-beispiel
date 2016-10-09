@@ -10,7 +10,7 @@ markdown: kramdown
 
 # change this, if you changed the repository name
 # see: http://downtothewire.io/2015/08/15/configuring-jekyll-for-user-and-project-github-pages/
-baseurl: /open-online-explorer
+# baseurl: /open-online-explorer
 
 # Language specific settings
 title:
