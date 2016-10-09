@@ -9,6 +9,8 @@ teaser: 'This article introduces the topic and raises some interesting questions
 
 This is an introduction article.
 
+Wir sind heute beim educamp
+
 **You can find all markdown codes in this cheatsheet: [Open Online Explorer Cheatsheet for markup](https://github.com/MediaLiteracyLab/open-online-explorer/wiki/Cheatsheet-for-article-markup:-links,-images,-videos-&-more)**
 
 Here is an example paragraph:
