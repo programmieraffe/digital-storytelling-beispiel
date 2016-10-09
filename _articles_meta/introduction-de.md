@@ -1,5 +1,5 @@
 ---
-title: Introduction article (german example)
+title: Einführung ins Thema
 lang: de
 ref: introduction
 feature_image: /images/feature_image_introduction_700_300.png
@@ -8,3 +8,5 @@ teaser: 'Das ist eine Übersetzung des Einführungsartikels'
 ---
 
 Deutsche Übersetzung. :-)
+
+(Inhalt folgt)
