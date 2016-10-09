@@ -8,6 +8,9 @@
 # Build settings
 markdown: kramdown
 
+# change this, if you changed the repository name
+baseurl: /your-repository
+
 # Language specific settings
 title:
   de: Open Online Explorer
