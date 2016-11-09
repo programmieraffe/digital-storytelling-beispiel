@@ -2,7 +2,7 @@
 
 The Open Online Explorer enables you to explore a topic together and publish the results as a static webpage on github pages. The webpage can be improved or remixed by other users on github.com.
 
-** Live preview: ** https://medialiteracylab.github.io/open-online-explorer
+** Live preview: ** https://programmieraffe.github.io/open-online-explorer
 
 If you have forked this repository, replace the link above the following way: https://YOUR-USERNAME.github.io/YOUR-REPOSITORY-TITLE
 
